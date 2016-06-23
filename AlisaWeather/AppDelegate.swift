@@ -7,15 +7,19 @@
 //
 
 import UIKit
+import INTULocationManager
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // LeanCloud init
+        AVOSCloud.setApplicationId("bECht4uxBnRhpwuxn8me6Djd-gzGzoHsz", clientKey: "LuGE7Np1vPVrtHRzgvgjo9fi")
+        
         return true
     }
 

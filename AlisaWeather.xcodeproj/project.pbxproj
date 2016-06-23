@@ -12,6 +12,7 @@
 		408C507D1C9E7ADB00D01042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C507B1C9E7ADB00D01042 /* Main.storyboard */; };
 		408C507F1C9E7ADB00D01042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408C507E1C9E7ADB00D01042 /* Assets.xcassets */; };
 		408C50821C9E7ADB00D01042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C50801C9E7ADB00D01042 /* LaunchScreen.storyboard */; };
+		A5FC1FBCF01D52B2BD3574F3 /* Pods_AlisaWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7255D4D745A33BA2CDE671E /* Pods_AlisaWeather.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,10 @@
 		408C507E1C9E7ADB00D01042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		408C50811C9E7ADB00D01042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		408C50831C9E7ADB00D01042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40C5D1E11C9EA506009727D1 /* AlisaWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlisaWeather-Bridging-Header.h"; sourceTree = "<group>"; };
+		91A273FD320BEDDE92B1945D /* Pods-AlisaWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlisaWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlisaWeather/Pods-AlisaWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		B3FD499DFAF1FBE396DF0F5D /* Pods-AlisaWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlisaWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlisaWeather/Pods-AlisaWeather.release.xcconfig"; sourceTree = "<group>"; };
+		B7255D4D745A33BA2CDE671E /* Pods_AlisaWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlisaWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5FC1FBCF01D52B2BD3574F3 /* Pods_AlisaWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 			children = (
 				408C50761C9E7ADB00D01042 /* AlisaWeather */,
 				408C50751C9E7ADB00D01042 /* Products */,
+				67FB8C2B9020CA5FB95B9226 /* Pods */,
+				9008E0490B54BA9E8BB3000D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +68,26 @@
 				408C507E1C9E7ADB00D01042 /* Assets.xcassets */,
 				408C50801C9E7ADB00D01042 /* LaunchScreen.storyboard */,
 				408C50831C9E7ADB00D01042 /* Info.plist */,
+				40C5D1E11C9EA506009727D1 /* AlisaWeather-Bridging-Header.h */,
 			);
 			path = AlisaWeather;
+			sourceTree = "<group>";
+		};
+		67FB8C2B9020CA5FB95B9226 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91A273FD320BEDDE92B1945D /* Pods-AlisaWeather.debug.xcconfig */,
+				B3FD499DFAF1FBE396DF0F5D /* Pods-AlisaWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9008E0490B54BA9E8BB3000D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7255D4D745A33BA2CDE671E /* Pods_AlisaWeather.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +97,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408C50861C9E7ADB00D01042 /* Build configuration list for PBXNativeTarget "AlisaWeather" */;
 			buildPhases = (
+				5D8B2F58E03262F531EC6262 /* [CP] Check Pods Manifest.lock */,
 				408C50701C9E7ADB00D01042 /* Sources */,
 				408C50711C9E7ADB00D01042 /* Frameworks */,
 				408C50721C9E7ADB00D01042 /* Resources */,
+				A47D6CA68D5C9B9696160BD7 /* [CP] Embed Pods Frameworks */,
+				2A8239510BFDD927BA13A257 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +125,12 @@
 				TargetAttributes = {
 					408C50731C9E7ADB00D01042 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = TCXFX6H5P2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -129,6 +164,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A8239510BFDD927BA13A257 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlisaWeather/Pods-AlisaWeather-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D8B2F58E03262F531EC6262 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A47D6CA68D5C9B9696160BD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlisaWeather/Pods-AlisaWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		408C50701C9E7ADB00D01042 /* Sources */ = {
@@ -245,23 +328,38 @@
 		};
 		408C50871C9E7ADB00D01042 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91A273FD320BEDDE92B1945D /* Pods-AlisaWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Bokang Huang (UWS6428YWU)";
 				INFOPLIST_FILE = AlisaWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alisa.AlisaWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlisaWeather/AlisaWeather-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		408C50881C9E7ADB00D01042 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3FD499DFAF1FBE396DF0F5D /* Pods-AlisaWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Bokang Huang (TCXFX6H5P2)";
 				INFOPLIST_FILE = AlisaWeather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alisa.AlisaWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AlisaWeather/AlisaWeather-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -284,6 +382,7 @@
 				408C50881C9E7ADB00D01042 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
