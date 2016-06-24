@@ -10,6 +10,7 @@ import UIKit
 import INTULocationManager
 import Alamofire
 import SVProgressHUD
+import SwiftyJSON
 
 class ViewController: UIViewController {
     
@@ -31,8 +32,9 @@ class ViewController: UIViewController {
                 Alamofire.request(.GET, "http://api.openweathermap.org/data/2.5/weather", parameters: ["lat": coordinate.latitude, "lon": coordinate.longitude, "appid": "8c06d74fc20247e00c14f21ce32ccfe2"])
                     .responseJSON(completionHandler: { (response) -> Void in
                         if response.result.isSuccess {
-                            if let responseDict = response.result.value! as? NSDictionary {
-                                
+                            if let value = response.result.value {
+                                let json = JSON(value)
+								print(json)
                             }
                         }
                         SVProgressHUD.dismiss()

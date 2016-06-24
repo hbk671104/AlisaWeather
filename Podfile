@@ -9,5 +9,6 @@ pod 'INTULocationManager'
 pod 'Alamofire'
 pod 'SVProgressHUD'
 pod 'AVOSCloud'
+pod 'SwiftyJSON'
 
 end
